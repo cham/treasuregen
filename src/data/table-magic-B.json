@@ -1,0 +1,142 @@
+[
+  {
+    "d100": 15,
+    "item": "Potion of greater healing"
+  },
+  {
+    "d100": 22,
+    "item": "Potion of fire breath"
+  },
+  {
+    "d100": 29,
+    "item": "Potion of resistance"
+  },
+  {
+    "d100": 34,
+    "item": "Ammunition, +1"
+  },
+  {
+    "d100": 39,
+    "item": "Potion of animal friendship"
+  },
+  {
+    "d100": 44,
+    "item": "Potion of hill giant strength"
+  },
+  {
+    "d100": 49,
+    "item": "Potion of growth"
+  },
+  {
+    "d100": 54,
+    "item": "Potion of water breathing"
+  },
+  {
+    "d100": 59,
+    "item": "Spell scroll (2nd level)"
+  },
+  {
+    "d100": 64,
+    "item": "Spell scroll (3rd level)"
+  },
+  {
+    "d100": 67,
+    "item": "Bag of holding"
+  },
+  {
+    "d100": 70,
+    "item": "Keoghtom's ointment"
+  },
+  {
+    "d100": 73,
+    "item": "Oil of slipperiness"
+  },
+  {
+    "d100": 75,
+    "item": "Dust of disappearance"
+  },
+  {
+    "d100": 77,
+    "item": "Dust of dryness"
+  },
+  {
+    "d100": 79,
+    "item": "Dust of sneezing and choking"
+  },
+  {
+    "d100": 81,
+    "item": "Elemental gem"
+  },
+  {
+    "d100": 83,
+    "item": "Philter of love"
+  },
+  {
+    "d100": 84,
+    "item": "Alchemy jug"
+  },
+  {
+    "d100": 85,
+    "item": "Cap of water breathing"
+  },
+  {
+    "d100": 86,
+    "item": "Cloak of the manta ray"
+  },
+  {
+    "d100": 87,
+    "item": "Driftglobe"
+  },
+  {
+    "d100": 88,
+    "item": "Goggles of night"
+  },
+  {
+    "d100": 89,
+    "item": "Helm of comprehending languages"
+  },
+  {
+    "d100": 90,
+    "item": "Immovable rod"
+  },
+  {
+    "d100": 91,
+    "item": "Lantern of revealing"
+  },
+  {
+    "d100": 92,
+    "item": "Mariner's armor"
+  },
+  {
+    "d100": 93,
+    "item": "Mithral armor"
+  },
+  {
+    "d100": 94,
+    "item": "Potion of poison"
+  },
+  {
+    "d100": 95,
+    "item": "Ring of swimming"
+  },
+  {
+    "d100": 96,
+    "item": "Robe of useful items"
+  },
+  {
+    "d100": 97,
+    "item": "Rope of climbing"
+  },
+  {
+    "d100": 98,
+    "item": "Saddle of the cavalier"
+  },
+  {
+    "d100": 99,
+    "item": "Wand of magic detection"
+  },
+  {
+    "d100": 100,
+    "item": "Wand of secrets"
+  }
+]
