@@ -1,5 +1,6 @@
 const getTreasureTable = (type, cr) => require(`../data/table-${type}-${cr}.json`)
 const getGemTable = type => require(`../data/table-gems-${type}.json`)
+const getArtTable = type => require(`../data/table-art-${type}.json`)
 
 const rollDice = (numFaces, numRolls) => {
   let total = 0
@@ -34,11 +35,10 @@ const gpConversionRatio = (itemKey) => {
   return 1
 }
 
-const getEntry = (entries) => {
+const getEntry = (roll, entries) => {
   if (!entries) {
     return {}
   }
-  const roll = rollDie(100)
   const entry = entries.filter(entry => entry['d100'] >= roll).shift()
   return Object.keys(entry).filter(entryKey => entryKey !== 'd100').reduce((memo, key) => {
     memo[key] = entry[key]
@@ -46,8 +46,20 @@ const getEntry = (entries) => {
   }, {})
 }
 
-const getCoins = (coinEntries) => {
-  const coinEntry = getEntry(coinEntries)
+const gemTypeToFancy = (gemType) => {
+  const roll = rollDie(12)
+  const gemTable = getGemTable(gemType)
+  return gemTable[roll-1]
+}
+
+const artTypeToFancy = (artType) => {
+  const roll = rollDie(10)
+  const artTable = getArtTable(artType)
+  return artTable[roll-1]
+}
+
+const getCoins = (roll, coinEntries) => {
+  const coinEntry = getEntry(roll, coinEntries)
   return Object.keys(coinEntry)
     .map((coinType) => {
       const amount = rollDiceForDefinition(coinEntry[coinType])
@@ -59,14 +71,8 @@ const getCoins = (coinEntries) => {
     })
 }
 
-const gemTypeToFancy = (gemType) => {
-  const roll = rollDie(12)
-  const gemTable = getGemTable(gemType)
-  return gemTable[roll-1]
-}
-
-const getGems = (gemEntries) => {
-  const gemEntry = getEntry(gemEntries)
+const getGems = (roll, gemEntries) => {
+  const gemEntry = getEntry(roll, gemEntries)
   return Object.keys(gemEntry)
     .map((gemType) => {
       const amount = rollDiceForDefinition(gemEntry[gemType])
@@ -78,11 +84,26 @@ const getGems = (gemEntries) => {
     })
 }
 
+const getArt = (roll, artEntries) => {
+  const artEntry = getEntry(roll, artEntries)
+  return Object.keys(artEntry)
+    .map((artType) => {
+      const amount = rollDiceForDefinition(artEntry[artType])
+      return {
+        artType: `${artTypeToFancy(artType)}, ${artType} each`,
+        amount,
+        amountInGP: amount * gpConversionRatio(artType)
+      }
+    })
+}
+
 const getTreasure = (type, cr) => {
   const table = getTreasureTable(type, cr)
-  const coins = getCoins(table.coins)
-  const gems = getGems(table.gems)
-  return { coins, gems }
+  const roll = rollDie(100)
+  const coins = getCoins(roll, table.coins)
+  const gems = getGems(roll, table.gems)
+  const art = getArt(roll, table.art)
+  return { roll, coins, gems, art }
 }
 
 export { getTreasure }

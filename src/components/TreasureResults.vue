@@ -1,12 +1,19 @@
 <template>
   <div>
     <div>
+      Roll: {{roll}}
+    </div>
+    <div v-if="coins.length">
       Coins - {{coinTotal}} gp
       <coins-list/>
     </div>
-    <div>
+    <div v-if="gems.length">
       Gems - {{gemsTotal}} gp
       <gems-list/>
+    </div>
+    <div v-if="art.length">
+      Art - {{artTotal}} gp
+      <art-list/>
     </div>
     <div>
       Total gold value - {{totalGoldValue}} gp
@@ -18,6 +25,7 @@
 import { mapGetters } from 'vuex'
 import CoinsList from '@/components/CoinsList'
 import GemsList from '@/components/GemsList'
+import ArtList from '@/components/ArtList'
 
 const sumGPValue = arr => arr.reduce((memo, datum) => {
   return memo + datum.amountInGP
@@ -26,10 +34,11 @@ const sumGPValue = arr => arr.reduce((memo, datum) => {
 export default {
   components: {
     CoinsList,
-    GemsList
+    GemsList,
+    ArtList
   },
   computed: {
-    ...mapGetters('treasure', ['coins', 'gems']),
+    ...mapGetters('treasure', ['coins', 'gems', 'art', 'roll']),
     coinTotal () {
       if (!this.coins.length) {
         return '0.00'
@@ -42,8 +51,14 @@ export default {
       }
       return sumGPValue(this.gems).toFixed(2)
     },
+    artTotal () {
+      if (!this.art.length) {
+        return '0.00'
+      }
+      return sumGPValue(this.art).toFixed(2)
+    },
     totalGoldValue () {
-      return (sumGPValue(this.coins) + sumGPValue(this.gems)).toFixed(2)
+      return (sumGPValue(this.coins) + sumGPValue(this.gems) + sumGPValue(this.art)).toFixed(2)
     }
   }
 }

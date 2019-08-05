@@ -1,6 +1,8 @@
 const state = {
   coins: [],
-  gems: []
+  gems: [],
+  art: [],
+  roll: 0
 }
 
 export default state
