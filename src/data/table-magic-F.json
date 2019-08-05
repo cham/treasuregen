@@ -1,0 +1,242 @@
+[
+  {
+    "d100": 15,
+    "item": "Weapon, +1"
+  },
+  {
+    "d100": 18,
+    "item": "Shield, +1"
+  },
+  {
+    "d100": 21,
+    "item": "Sentinel shield"
+  },
+  {
+    "d100": 23,
+    "item": "Amulet of proof against detection and location"
+  },
+  {
+    "d100": 25,
+    "item": "Boots of elvenkind"
+  },
+  {
+    "d100": 27,
+    "item": "Boots of striding and springing"
+  },
+  {
+    "d100": 29,
+    "item": "Bracers of archery"
+  },
+  {
+    "d100": 31,
+    "item": "Bracers of shielding"
+  },
+  {
+    "d100": 33,
+    "item": "Broom of flying"
+  },
+  {
+    "d100": 35,
+    "item": "Cloak of elvenkind"
+  },
+  {
+    "d100": 37,
+    "item": "Cloak of protection"
+  },
+  {
+    "d100": 39,
+    "item": "Gauntlets of ogre power"
+  },
+  {
+    "d100": 41,
+    "item": "Hat of disguise"
+  },
+  {
+    "d100": 43,
+    "item": "Javelin of lightning"
+  },
+  {
+    "d100": 45,
+    "item": "Pearl of power"
+  },
+  {
+    "d100": 47,
+    "item": "Rod of the pact keeper, +1"
+  },
+  {
+    "d100": 49,
+    "item": "Slippers of spider climbing"
+  },
+  {
+    "d100": 51,
+    "item": "Staff of the adder"
+  },
+  {
+    "d100": 53,
+    "item": "Staff of the python"
+  },
+  {
+    "d100": 55,
+    "item": "Sword of vengeance"
+  },
+  {
+    "d100": 57,
+    "item": "Trident of fish command"
+  },
+  {
+    "d100": 59,
+    "item": "Wand of magic missiles"
+  },
+  {
+    "d100": 61,
+    "item": "Wand of the war mage, +1"
+  },
+  {
+    "d100": 63,
+    "item": "Wand of web"
+  },
+  {
+    "d100": 65,
+    "item": "Weapon of warning"
+  },
+  {
+    "d100": 66,
+    "item": "Adamantine armor (chain mail)"
+  },
+  {
+    "d100": 67,
+    "item": "Adamantine armor (chain shirt)"
+  },
+  {
+    "d100": 68,
+    "item": "Adamantine armor (scale mail)"
+  },
+  {
+    "d100": 69,
+    "item": "Bag of tricks (gray)"
+  },
+  {
+    "d100": 70,
+    "item": "Bag of tricks (rust)"
+  },
+  {
+    "d100": 71,
+    "item": "Bag of tricks (tan)"
+  },
+  {
+    "d100": 72,
+    "item": "Boots of the winterlands"
+  },
+  {
+    "d100": 73,
+    "item": "Circlet of blasting"
+  },
+  {
+    "d100": 74,
+    "item": "Deck of illusions"
+  },
+  {
+    "d100": 75,
+    "item": "Eversmoking bottle"
+  },
+  {
+    "d100": 76,
+    "item": "Eyes of charming"
+  },
+  {
+    "d100": 77,
+    "item": "Eyes of the eagle"
+  },
+  {
+    "d100": 78,
+    "item": "Figurine of wondrous power (silver raven)"
+  },
+  {
+    "d100": 79,
+    "item": "Gem of brightness"
+  },
+  {
+    "d100": 80,
+    "item": "Gloves of missile snaring"
+  },
+  {
+    "d100": 81,
+    "item": "Gloves of swimming and climbing"
+  },
+  {
+    "d100": 82,
+    "item": "Gloves of thievery"
+  },
+  {
+    "d100": 83,
+    "item": "Headband of intellect"
+  },
+  {
+    "d100": 84,
+    "item": "Helm of telepathy"
+  },
+  {
+    "d100": 85,
+    "item": "Instrument of the bards (Doss lute)"
+  },
+  {
+    "d100": 86,
+    "item": "Instrument of the bards (Fochlucan bandore)"
+  },
+  {
+    "d100": 87,
+    "item": "Instrument of the bards (Mac-Fuimidh cittern)"
+  },
+  {
+    "d100": 88,
+    "item": "Medallion of thoughts"
+  },
+  {
+    "d100": 89,
+    "item": "Necklace of adaptation"
+  },
+  {
+    "d100": 90,
+    "item": "Periapt of wound closure"
+  },
+  {
+    "d100": 91,
+    "item": "Pipes of haunting"
+  },
+  {
+    "d100": 92,
+    "item": "Pipes of the sewers"
+  },
+  {
+    "d100": 93,
+    "item": "Ring of jumping"
+  },
+  {
+    "d100": 94,
+    "item": "Ring of mind shielding"
+  },
+  {
+    "d100": 95,
+    "item": "Ring of warmth"
+  },
+  {
+    "d100": 96,
+    "item": "Ring of water walking"
+  },
+  {
+    "d100": 97,
+    "item": "Quiver of Ehlonna"
+  },
+  {
+    "d100": 98,
+    "item": "Stone of good luck"
+  },
+  {
+    "d100": 99,
+    "item": "Wind fan"
+  },
+  {
+    "d100": 100,
+    "item": "Winged boots"
+  }
+]
