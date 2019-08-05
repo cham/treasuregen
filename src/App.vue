@@ -4,6 +4,7 @@
     <div>
       Coins
       <input type="checkbox" @click="onShowInGP"> Show in GP
+      <p v-if="!coins.length">None</p>
       <div v-if="!showInGP">
         <p v-for="coinData in coins" :key="coinData.coinType">
           {{coinData.amount}} {{coinData.coinType}}
@@ -14,6 +15,13 @@
           {{coinTotal}} gp
         </p>
       </div>
+    </div>
+    <div>
+      Gems
+      <p v-if="!gems.length">None</p>
+      <p v-for="gemData in gems" :key="gemData.gemType">
+        {{gemData.amount}} x {{gemData.gemType}} ({{gemData.amountInGP}} gp)
+      </p>
     </div>
   </div>
 </template>
@@ -32,7 +40,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('treasure', ['coins']),
+    ...mapGetters('treasure', ['coins', 'gems']),
     coinTotal () {
       if (!this.coins.length) {
         return 0

@@ -1,5 +1,6 @@
 const state = {
-  coins: ''
+  coins: [],
+  gems: []
 }
 
 export default state
