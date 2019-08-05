@@ -1,10 +1,17 @@
 <template>
   <div id="app">
+    <treasure-selector/>
   </div>
 </template>
 
 <script>
-export default {}
+import TreasureSelector from '@/components/TreasureSelector'
+
+export default {
+  components: {
+    TreasureSelector
+  }
+}
 </script>
 
 <style>
