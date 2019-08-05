@@ -1,6 +1,9 @@
+import * as api from '@/api'
+
 const actions = {
-  getTreasure (context, { type, cr }) {
-    console.log(type, cr)
+  getTreasure ({ commit }, { type, cr }) {
+    const treasure = api.getTreasure(type, cr)
+    commit('SET_COINS', treasure.coins)
   }
 }
 

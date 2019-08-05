@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <treasure-selector/>
+    <div>
+      Coins
+      <p v-for="coinRow in coins" :key="coinRow">{{coinRow}}</p>
+    </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import TreasureSelector from '@/components/TreasureSelector'
 
 export default {
   components: {
     TreasureSelector
-  }
+  },
+  computed: mapGetters('treasure', ['coins'])
 }
 </script>
 
