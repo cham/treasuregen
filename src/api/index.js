@@ -60,7 +60,6 @@ const artTypeToFancy = (artType) => {
 }
 
 const magicItemFromTable = (tableName) => {
-  tableName = 'A'
   const magicTable = getMagicTable(tableName)
   const entry = getEntry(rollDie(100), magicTable)
   return entry.item
