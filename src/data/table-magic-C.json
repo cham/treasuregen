@@ -1,0 +1,114 @@
+[
+  {
+    "d100": 15,
+    "item": "Potion of superior healing"
+  },
+  {
+    "d100": 22,
+    "item": "Spell scroll (4th level)"
+  },
+  {
+    "d100": 27,
+    "item": "Ammunition, +2"
+  },
+  {
+    "d100": 32,
+    "item": "Potion of clairvoyance"
+  },
+  {
+    "d100": 37,
+    "item": "Potion of diminution"
+  },
+  {
+    "d100": 42,
+    "item": "Potion of gaseous form"
+  },
+  {
+    "d100": 47,
+    "item": "Potion of frost giant strength"
+  },
+  {
+    "d100": 52,
+    "item": "Potion of stone giant strength"
+  },
+  {
+    "d100": 57,
+    "item": "Potion of heroism"
+  },
+  {
+    "d100": 62,
+    "item": "Potion of invulnerability"
+  },
+  {
+    "d100": 67,
+    "item": "Potion of mind reading"
+  },
+  {
+    "d100": 72,
+    "item": "Spell scroll (5th level)"
+  },
+  {
+    "d100": 75,
+    "item": "Elixir of health"
+  },
+  {
+    "d100": 78,
+    "item": "Oil of etherealness"
+  },
+  {
+    "d100": 81,
+    "item": "Potion of fire giant strength"
+  },
+  {
+    "d100": 84,
+    "item": "Quaal's feather token"
+  },
+  {
+    "d100": 87,
+    "item": "Scroll of protection"
+  },
+  {
+    "d100": 89,
+    "item": "Bag of beans"
+  },
+  {
+    "d100": 91,
+    "item": "Bead of force"
+  },
+  {
+    "d100": 92,
+    "item": "Chime of opening"
+  },
+  {
+    "d100": 93,
+    "item": "Decanter of endless water"
+  },
+  {
+    "d100": 94,
+    "item": "Eyes of minute seeing"
+  },
+  {
+    "d100": 95,
+    "item": "Folding boat"
+  },
+  {
+    "d100": 96,
+    "item": "Heward's handy haversack"
+  },
+  {
+    "d100": 97,
+    "item": "Horseshoes of speed"
+  },
+  {
+    "d100": 98,
+    "item": "Necklace of fireballs"
+  },
+  {
+    "d100": 99,
+    "item": "Periapt of health"
+  },
+  {
+    "d100": 100,
+    "item": "Sending stones"
+  }
+]
