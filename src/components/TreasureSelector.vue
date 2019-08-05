@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import InputSelect from '@/components/utils/InputSelect'
 import InputButton from '@/components/utils/InputButton'
 
@@ -22,6 +23,7 @@ export default {
     }
   },
   methods: {
+    ...mapActions('treasure', ['getTreasure']),
     onUpdateType (type) {
       this.type = type
     },
@@ -29,7 +31,7 @@ export default {
       this.cr = cr
     },
     onGenerate () {
-      console.log(`${this.type} ${this.cr}`)
+      this.getTreasure(this)
     }
   }
 }
