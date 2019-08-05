@@ -12,6 +12,22 @@ const rollDiceForDefinition = (rollDef) => {
   return rollDice(parseInt(defParts[1]), parseInt(defParts[0]))
 }
 
+const gpConversionRatio = (coinType) => {
+  if (coinType === 'cp') {
+    return 0.01
+  }
+  if (coinType === 'sp') {
+    return 0.1
+  }
+  if (coinType === 'ep') {
+    return 0.5
+  }
+  if (coinType === 'pp') {
+    return 10
+  }
+  return 1
+}
+
 const getTreasureTable = (type, cr) => require(`../data/table-${type}-${cr}.json`)
 
 const getCoins = (coinEntries) => {
@@ -19,7 +35,14 @@ const getCoins = (coinEntries) => {
   const coinEntry = coinEntries.filter(entry => entry['d100'] >= roll).shift()
   return Object.keys(coinEntry)
     .filter(coinType => coinType !== 'd100')
-    .map(coinType => `${rollDiceForDefinition(coinEntry[coinType])} x ${coinType}`)
+    .map((coinType) => {
+      const amount = rollDiceForDefinition(coinEntry[coinType])
+      return {
+        coinType,
+        amount,
+        amountInGP: amount * gpConversionRatio(coinType)
+      }
+    })
 }
 
 const getTreasure = (type, cr) => {

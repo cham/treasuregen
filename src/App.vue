@@ -3,7 +3,17 @@
     <treasure-selector/>
     <div>
       Coins
-      <p v-for="coinRow in coins" :key="coinRow">{{coinRow}}</p>
+      <input type="checkbox" @click="onShowInGP"> Show in GP
+      <div v-if="!showInGP">
+        <p v-for="coinData in coins" :key="coinData.coinType">
+          {{coinData.amount}} {{coinData.coinType}}
+        </p>
+      </div>
+      <div v-else>
+        <p>
+          {{coinTotal}} gp
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -16,7 +26,27 @@ export default {
   components: {
     TreasureSelector
   },
-  computed: mapGetters('treasure', ['coins'])
+  data () {
+    return {
+      showInGP: false
+    }
+  },
+  computed: {
+    ...mapGetters('treasure', ['coins']),
+    coinTotal () {
+      if (!this.coins.length) {
+        return 0
+      }
+      return this.coins.reduce((memo, coinData) => {
+        return memo + coinData.amountInGP
+      }, 0).toFixed(2)
+    }
+  },
+  methods: {
+    onShowInGP () {
+      this.showInGP = !this.showInGP
+    }
+  }
 }
 </script>
 
