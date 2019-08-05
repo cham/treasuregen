@@ -10,6 +10,9 @@ const mutations = {
   },
   'SET_ROLL' (state, roll) {
     Object.assign(state, { roll })
+  },
+  'SET_MAGIC' (state, magic) {
+    Object.assign(state, { magic })
   }
 }
 

@@ -1,0 +1,34 @@
+[
+  {
+    "d100": 50,
+    "item": "Potion of healing"
+  },
+  {
+    "d100": 60,
+    "item": "Spell scroll (cantrip)"
+  },
+  {
+    "d100": 70,
+    "item": "Potion of climbing"
+  },
+  {
+    "d100": 90,
+    "item": "Spell scroll (1st level)"
+  },
+  {
+    "d100": 94,
+    "item": "Spell scroll (2nd level)"
+  },
+  {
+    "d100": 98,
+    "item": "Potion of greater healing"
+  },
+  {
+    "d100": 99,
+    "item": "Bag of holding"
+  },
+  {
+    "d100": 100,
+    "item": "Driftglobe"
+  }
+]

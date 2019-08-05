@@ -7,6 +7,7 @@ const actions = {
     commit('SET_COINS', treasure.coins)
     commit('SET_GEMS', treasure.gems)
     commit('SET_ART', treasure.art)
+    commit('SET_MAGIC', treasure.magic)
   }
 }
 
