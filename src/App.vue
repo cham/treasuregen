@@ -2,26 +2,21 @@
   <div id="app">
     <treasure-selector/>
     <div>
-      Coins
-      <input type="checkbox" @click="onShowInGP"> Show in GP
+      Coins - {{coinTotal}} gp
       <p v-if="!coins.length">None</p>
-      <div v-if="!showInGP">
-        <p v-for="coinData in coins" :key="coinData.coinType">
-          {{coinData.amount}} {{coinData.coinType}}
-        </p>
-      </div>
-      <div v-else>
-        <p>
-          {{coinTotal}} gp
-        </p>
-      </div>
+      <p v-for="coinData in coins" :key="coinData.coinType">
+        {{coinData.amount}} {{coinData.coinType}}
+      </p>
     </div>
     <div>
-      Gems
+      Gems - {{gemsTotal}} gp
       <p v-if="!gems.length">None</p>
       <p v-for="gemData in gems" :key="gemData.gemType">
-        {{gemData.amount}} x {{gemData.gemType}} ({{gemData.amountInGP}} gp)
+        {{gemData.amount}} x {{gemData.gemType}}
       </p>
+    </div>
+    <div>
+      Total gold value - {{totalGoldValue}} gp
     </div>
   </div>
 </template>
@@ -30,29 +25,30 @@
 import { mapGetters } from 'vuex'
 import TreasureSelector from '@/components/TreasureSelector'
 
+const sumGPValue = arr => arr.reduce((memo, datum) => {
+  return memo + datum.amountInGP
+}, 0)
+
 export default {
   components: {
     TreasureSelector
-  },
-  data () {
-    return {
-      showInGP: false
-    }
   },
   computed: {
     ...mapGetters('treasure', ['coins', 'gems']),
     coinTotal () {
       if (!this.coins.length) {
-        return 0
+        return '0.00'
       }
-      return this.coins.reduce((memo, coinData) => {
-        return memo + coinData.amountInGP
-      }, 0).toFixed(2)
-    }
-  },
-  methods: {
-    onShowInGP () {
-      this.showInGP = !this.showInGP
+      return sumGPValue(this.coins).toFixed(2)
+    },
+    gemsTotal () {
+      if (!this.gems.length) {
+        return '0.00'
+      }
+      return sumGPValue(this.gems).toFixed(2)
+    },
+    totalGoldValue () {
+      return (sumGPValue(this.coins) + sumGPValue(this.gems)).toFixed(2)
     }
   }
 }

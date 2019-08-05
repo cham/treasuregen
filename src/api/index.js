@@ -71,7 +71,7 @@ const getGems = (gemEntries) => {
     .map((gemType) => {
       const amount = rollDiceForDefinition(gemEntry[gemType])
       return {
-        gemType: gemTypeToFancy(gemType),
+        gemType: `${gemTypeToFancy(gemType)}, ${gemType} each`,
         amount,
         amountInGP: amount * gpConversionRatio(gemType)
       }
