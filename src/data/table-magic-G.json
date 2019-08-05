@@ -1,0 +1,354 @@
+[
+  {
+    "d100": 11,
+    "item": "Weapon, +2"
+  },
+  {
+    "d100": 14,
+    "item": "Figurine of wondrous power (any Rare)"
+  },
+  {
+    "d100": 15,
+    "item": "Adamantine armor (breastplate)"
+  },
+  {
+    "d100": 16,
+    "item": "Adamantine armor (splint)"
+  },
+  {
+    "d100": 17,
+    "item": "Amulet of health"
+  },
+  {
+    "d100": 18,
+    "item": "Armor of vulnerability"
+  },
+  {
+    "d100": 19,
+    "item": "Arrow-catching shield"
+  },
+  {
+    "d100": 20,
+    "item": "Belt of dwarvenkind"
+  },
+  {
+    "d100": 21,
+    "item": "Belt of hill giant strength"
+  },
+  {
+    "d100": 22,
+    "item": "Berserker axe"
+  },
+  {
+    "d100": 23,
+    "item": "Boots of levitation"
+  },
+  {
+    "d100": 24,
+    "item": "Boots of speed"
+  },
+  {
+    "d100": 25,
+    "item": "Bowl of commanding water elementals"
+  },
+  {
+    "d100": 26,
+    "item": "Bracers of defense"
+  },
+  {
+    "d100": 27,
+    "item": "Brazier of commanding fire elementals"
+  },
+  {
+    "d100": 28,
+    "item": "Cape of the mountebank"
+  },
+  {
+    "d100": 29,
+    "item": "Censer of controlling air elementals"
+  },
+  {
+    "d100": 30,
+    "item": "Armor, +1 chain mail"
+  },
+  {
+    "d100": 31,
+    "item": "Armor of resistance (chain mail)"
+  },
+  {
+    "d100": 32,
+    "item": "Armor, +1 chain shirt"
+  },
+  {
+    "d100": 33,
+    "item": "Armor of resistance (chain shirt)"
+  },
+  {
+    "d100": 34,
+    "item": "Cloak of displacement"
+  },
+  {
+    "d100": 35,
+    "item": "Cloak of the bat"
+  },
+  {
+    "d100": 36,
+    "item": "Cube of force"
+  },
+  {
+    "d100": 37,
+    "item": "Daern's instant fortress"
+  },
+  {
+    "d100": 38,
+    "item": "Dagger of venom"
+  },
+  {
+    "d100": 39,
+    "item": "Dimensional shackles"
+  },
+  {
+    "d100": 40,
+    "item": "Dragon slayer"
+  },
+  {
+    "d100": 41,
+    "item": "Elven chain"
+  },
+  {
+    "d100": 42,
+    "item": "Flame tongue"
+  },
+  {
+    "d100": 43,
+    "item": "Gem of seeing"
+  },
+  {
+    "d100": 44,
+    "item": "Giant slayer"
+  },
+  {
+    "d100": 45,
+    "item": "Glamoured studded leather"
+  },
+  {
+    "d100": 46,
+    "item": "Helm of teleportation"
+  },
+  {
+    "d100": 47,
+    "item": "Horn of blasting"
+  },
+  {
+    "d100": 48,
+    "item": "Horn of Valhalla (silver or brass)"
+  },
+  {
+    "d100": 49,
+    "item": "Instrument of the bards (Canaith mandolin)"
+  },
+  {
+    "d100": 50,
+    "item": "Instrument of the bards (Cli lyre)"
+  },
+  {
+    "d100": 51,
+    "item": "Ioun stone (awareness)"
+  },
+  {
+    "d100": 52,
+    "item": "Ioun stone (protection)"
+  },
+  {
+    "d100": 53,
+    "item": "Ioun stone (reserve)"
+  },
+  {
+    "d100": 54,
+    "item": "Ioun stone (sustenance)"
+  },
+  {
+    "d100": 55,
+    "item": "Iron bands of Bilarro"
+  },
+  {
+    "d100": 56,
+    "item": "Armor, +1 leather"
+  },
+  {
+    "d100": 57,
+    "item": "Armor of resistance (leather)"
+  },
+  {
+    "d100": 58,
+    "item": "Mace of disruption"
+  },
+  {
+    "d100": 59,
+    "item": "Mace of smiting"
+  },
+  {
+    "d100": 60,
+    "item": "Mace of terror"
+  },
+  {
+    "d100": 61,
+    "item": "Mace of spell resistance"
+  },
+  {
+    "d100": 62,
+    "item": "Necklace of prayer beads"
+  },
+  {
+    "d100": 63,
+    "item": "Periapt of proof against poison"
+  },
+  {
+    "d100": 64,
+    "item": "Ring of animal influence"
+  },
+  {
+    "d100": 65,
+    "item": "Ring of evasion"
+  },
+  {
+    "d100": 66,
+    "item": "Ring of feather falling"
+  },
+  {
+    "d100": 67,
+    "item": "Ring of free action"
+  },
+  {
+    "d100": 68,
+    "item": "Ring of protection"
+  },
+  {
+    "d100": 69,
+    "item": "Ring of resistance"
+  },
+  {
+    "d100": 70,
+    "item": "Ring of spell storm"
+  },
+  {
+    "d100": 71,
+    "item": "Ring of the ram"
+  },
+  {
+    "d100": 72,
+    "item": "Ring of X-ray vision"
+  },
+  {
+    "d100": 73,
+    "item": "Robe of eyes"
+  },
+  {
+    "d100": 74,
+    "item": "Rod of rulership"
+  },
+  {
+    "d100": 75,
+    "item": "Rod of the pact keeper, +2"
+  },
+  {
+    "d100": 76,
+    "item": "Rope of entanglement"
+  },
+  {
+    "d100": 77,
+    "item": "Armor, +1 scale mail"
+  },
+  {
+    "d100": 78,
+    "item": "Armor of resistance (scale mail)"
+  },
+  {
+    "d100": 79,
+    "item": "Shield, +2"
+  },
+  {
+    "d100": 80,
+    "item": "Shield of missile attraction"
+  },
+  {
+    "d100": 81,
+    "item": "Staff of charming"
+  },
+  {
+    "d100": 82,
+    "item": "Staff of healing"
+  },
+  {
+    "d100": 83,
+    "item": "Staff of swarming insects"
+  },
+  {
+    "d100": 84,
+    "item": "Staff of the woodlands"
+  },
+  {
+    "d100": 85,
+    "item": "Staff of whithering"
+  },
+  {
+    "d100": 86,
+    "item": "Stone of controlling earth elementals"
+  },
+  {
+    "d100": 87,
+    "item": "Sun blade"
+  },
+  {
+    "d100": 88,
+    "item": "Sword of life stealing"
+  },
+  {
+    "d100": 89,
+    "item": "Sword of wounding"
+  },
+  {
+    "d100": 90,
+    "item": "Tentacle rod"
+  },
+  {
+    "d100": 91,
+    "item": "Vicious weapon"
+  },
+  {
+    "d100": 92,
+    "item": "Wand of binding"
+  },
+  {
+    "d100": 93,
+    "item": "Wand of enemy detection"
+  },
+  {
+    "d100": 94,
+    "item": "Wand of fear"
+  },
+  {
+    "d100": 95,
+    "item": "Wand of fireballs"
+  },
+  {
+    "d100": 96,
+    "item": "Wand of lightning bolts"
+  },
+  {
+    "d100": 97,
+    "item": "Wand of paralysis"
+  },
+  {
+    "d100": 98,
+    "item": "Wand of the war mage, +2"
+  },
+  {
+    "d100": 99,
+    "item": "Wand of wonder"
+  },
+  {
+    "d100": 100,
+    "item": "Wings of flying"
+  }
+]
