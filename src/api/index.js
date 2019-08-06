@@ -27,11 +27,14 @@ const gpConversionRatio = (itemKey) => {
   if (itemKey === 'ep') {
     return 0.5
   }
-  if (itemKey === 'pp' || itemKey === '10gp') {
+  if (itemKey === 'pp') {
     return 10
   }
-  if (itemKey === '50gp') {
-    return 50
+  if (itemKey === 'gp') {
+    return 1
+  }
+  if (itemKey.match(/gp$/)) {
+    return parseInt(itemKey.replace('gp', ''))
   }
   return 1
 }
