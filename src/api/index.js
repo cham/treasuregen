@@ -51,14 +51,14 @@ const getEntry = (roll, entries) => {
 }
 
 const gemTypeToFancy = (gemType) => {
-  const roll = rollDie(12)
   const gemTable = getGemTable(gemType)
+  const roll = rollDie(gemTable.length)
   return gemTable[roll-1]
 }
 
 const artTypeToFancy = (artType) => {
-  const roll = rollDie(10)
   const artTable = getArtTable(artType)
+  const roll = rollDie(artTable.length)
   return artTable[roll-1]
 }
 

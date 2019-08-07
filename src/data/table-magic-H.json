@@ -1,0 +1,278 @@
+[
+  {
+    "d100": 10,
+    "item": "Weapon, +3"
+  },
+  {
+    "d100": 12,
+    "item": "Amulet of the planes"
+  },
+  {
+    "d100": 14,
+    "item": "Carpet of flying"
+  },
+  {
+    "d100": 16,
+    "item": "Crystal ball (very rare version)"
+  },
+  {
+    "d100": 18,
+    "item": "Ring of regeneration"
+  },
+  {
+    "d100": 20,
+    "item": "Ring of shooting stars"
+  },
+  {
+    "d100": 22,
+    "item": "Ring of telekinesis"
+  },
+  {
+    "d100": 24,
+    "item": "Robe of scintillating colors"
+  },
+  {
+    "d100": 26,
+    "item": "Robe of stars"
+  },
+  {
+    "d100": 28,
+    "item": "Rod of absorption"
+  },
+  {
+    "d100": 30,
+    "item": "Rod of alertness"
+  },
+  {
+    "d100": 32,
+    "item": "Rod of security"
+  },
+  {
+    "d100": 34,
+    "item": "Rod of the pact keeper, +3"
+  },
+  {
+    "d100": 36,
+    "item": "Scimitar of speed"
+  },
+  {
+    "d100": 38,
+    "item": "Shield, +3"
+  },
+  {
+    "d100": 40,
+    "item": "Staff of fire"
+  },
+  {
+    "d100": 42,
+    "item": "Staff of frost"
+  },
+  {
+    "d100": 44,
+    "item": "Staff of power"
+  },
+  {
+    "d100": 46,
+    "item": "Staff of striking"
+  },
+  {
+    "d100": 48,
+    "item": "Staff of thunder and lightning"
+  },
+  {
+    "d100": 50,
+    "item": "Sword of sharpness"
+  },
+  {
+    "d100": 52,
+    "item": "Wand of polymorph"
+  },
+  {
+    "d100": 54,
+    "item": "Wand of the war mage, +3"
+  },
+  {
+    "d100": 55,
+    "item": "Adamantine armor (half plate)"
+  },
+  {
+    "d100": 56,
+    "item": "Adamantine armor (plate)"
+  },
+  {
+    "d100": 57,
+    "item": "Animated shield"
+  },
+  {
+    "d100": 58,
+    "item": "Belt of fire giant strength"
+  },
+  {
+    "d100": 59,
+    "item": "Belt of frost (or stone) giant strength"
+  },
+  {
+    "d100": 60,
+    "item": "Armor, +1 breastplate"
+  },
+  {
+    "d100": 61,
+    "item": "Armor of resistance (breastplate)"
+  },
+  {
+    "d100": 62,
+    "item": "Candle of invocation"
+  },
+  {
+    "d100": 63,
+    "item": "Armor, +2 chain mail"
+  },
+  {
+    "d100": 64,
+    "item": "Armor, +2 chain shirt"
+  },
+  {
+    "d100": 65,
+    "item": "Cloak of arachnida"
+  },
+  {
+    "d100": 66,
+    "item": "Dancing sword"
+  },
+  {
+    "d100": 67,
+    "item": "Demon armor"
+  },
+  {
+    "d100": 68,
+    "item": "Dragon scale mail"
+  },
+  {
+    "d100": 69,
+    "item": "Dwarven plate"
+  },
+  {
+    "d100": 70,
+    "item": "Dwarven thrower"
+  },
+  {
+    "d100": 71,
+    "item": "Efreeti bottle"
+  },
+  {
+    "d100": 72,
+    "item": "Figurine of wondrous power (obsidian steed)"
+  },
+  {
+    "d100": 73,
+    "item": "Frost band"
+  },
+  {
+    "d100": 74,
+    "item": "Helm of brilliance"
+  },
+  {
+    "d100": 75,
+    "item": "Horn of Valhalla (bronze)"
+  },
+  {
+    "d100": 76,
+    "item": "Instrument of the bards (Anstruth harp)"
+  },
+  {
+    "d100": 77,
+    "item": "Ioun stone (absorption)"
+  },
+  {
+    "d100": 78,
+    "item": "Ioun stone (agility)"
+  },
+  {
+    "d100": 79,
+    "item": "Ioun stone (fortitude)"
+  },
+  {
+    "d100": 80,
+    "item": "Ioun stone (insight)"
+  },
+  {
+    "d100": 81,
+    "item": "Ioun stone (intellect)"
+  },
+  {
+    "d100": 82,
+    "item": "Ioun stone (leadership)"
+  },
+  {
+    "d100": 83,
+    "item": "Ioun stone (strength)"
+  },
+  {
+    "d100": 84,
+    "item": "Armor, +2 leather"
+  },
+  {
+    "d100": 85,
+    "item": "Manual of bodily health"
+  },
+  {
+    "d100": 86,
+    "item": "Manual of gainful exercise"
+  },
+  {
+    "d100": 87,
+    "item": "Manual of golems"
+  },
+  {
+    "d100": 88,
+    "item": "Manual of quickness of action"
+  },
+  {
+    "d100": 89,
+    "item": "Mirror of life trapping"
+  },
+  {
+    "d100": 90,
+    "item": "Nine lives stealer"
+  },
+  {
+    "d100": 91,
+    "item": "Oathbow"
+  },
+  {
+    "d100": 92,
+    "item": "Armor, +2 scale mail"
+  },
+  {
+    "d100": 93,
+    "item": "Spellguard shield"
+  },
+  {
+    "d100": 94,
+    "item": "Armor, +1 splint"
+  },
+  {
+    "d100": 95,
+    "item": "Armor of resistance (splint)"
+  },
+  {
+    "d100": 96,
+    "item": "Armor, +1 studded leather"
+  },
+  {
+    "d100": 97,
+    "item": "Armor of resistance (studded leather)"
+  },
+  {
+    "d100": 98,
+    "item": "Tome of clear thought"
+  },
+  {
+    "d100": 99,
+    "item": "Tome of leadership and influence"
+  },
+  {
+    "d100": 100,
+    "item": "Tome of understanding"
+  }
+]

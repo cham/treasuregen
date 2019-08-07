@@ -1,0 +1,66 @@
+[
+  {
+    "d100": 20,
+    "item": "Potion of supreme healing"
+  },
+  {
+    "d100": 30,
+    "item": "Potion of invisibility"
+  },
+  {
+    "d100": 40,
+    "item": "Potion of speed"
+  },
+  {
+    "d100": 50,
+    "item": "Spell scroll (6th level)"
+  },
+  {
+    "d100": 57,
+    "item": "Spell scroll (7th level)"
+  },
+  {
+    "d100": 62,
+    "item": "Ammunition, +3"
+  },
+  {
+    "d100": 67,
+    "item": "Oil of sharpness"
+  },
+  {
+    "d100": 72,
+    "item": "Potion of flying"
+  },
+  {
+    "d100": 77,
+    "item": "Potion of cloud giant strength"
+  },
+  {
+    "d100": 82,
+    "item": "Potion of longevity"
+  },
+  {
+    "d100": 87,
+    "item": "Potion of vitality"
+  },
+  {
+    "d100": 92,
+    "item": "Spell scroll (8th level)"
+  },
+  {
+    "d100": 95,
+    "item": "Horseshoes of a zephyr"
+  },
+  {
+    "d100": 98,
+    "item": "Nolzur's marvelous pigments"
+  },
+  {
+    "d100": 99,
+    "item": "Bag of devouring"
+  },
+  {
+    "d100": 100,
+    "item": "Portable hole"
+  }
+]
