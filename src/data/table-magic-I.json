@@ -1,0 +1,214 @@
+[
+  {
+    "d100": 5,
+    "item": "Defender"
+  },
+  {
+    "d100": 10,
+    "item": "Hammer of thunderbolts"
+  },
+  {
+    "d100": 15,
+    "item": "Luck blade"
+  },
+  {
+    "d100": 20,
+    "item": "Sword of answering"
+  },
+  {
+    "d100": 23,
+    "item": "Holy avenger"
+  },
+  {
+    "d100": 26,
+    "item": "Ring of djinni summoning"
+  },
+  {
+    "d100": 29,
+    "item": "Ring of invisibility"
+  },
+  {
+    "d100": 32,
+    "item": "Ring of spell turning"
+  },
+  {
+    "d100": 35,
+    "item": "Rod of lordly might"
+  },
+  {
+    "d100": 38,
+    "item": "Staff of the magi"
+  },
+  {
+    "d100": 41,
+    "item": "Vorpal sword"
+  },
+  {
+    "d100": 43,
+    "item": "Belt of cloud giant strength"
+  },
+  {
+    "d100": 45,
+    "item": "Armor, +2 breastplate"
+  },
+  {
+    "d100": 47,
+    "item": "Armor, +3 chain mail"
+  },
+  {
+    "d100": 49,
+    "item": "Armor, +3 chain shirt"
+  },
+  {
+    "d100": 51,
+    "item": "Cloak of invisibility"
+  },
+  {
+    "d100": 53,
+    "item": "Crystal ball (legendary version)"
+  },
+  {
+    "d100": 55,
+    "item": "Armor, +1 half plate"
+  },
+  {
+    "d100": 57,
+    "item": "Iron flask"
+  },
+  {
+    "d100": 59,
+    "item": "Armor, +3 leather"
+  },
+  {
+    "d100": 61,
+    "item": "Armor, +1 plate"
+  },
+  {
+    "d100": 63,
+    "item": "Robe of the archmagi"
+  },
+  {
+    "d100": 65,
+    "item": "Rod of resurrection"
+  },
+  {
+    "d100": 67,
+    "item": "Armor, +1 scale mail"
+  },
+  {
+    "d100": 69,
+    "item": "Scarab of protection"
+  },
+  {
+    "d100": 71,
+    "item": "Armor, +2 splint"
+  },
+  {
+    "d100": 73,
+    "item": "Armor, +2 studded leather"
+  },
+  {
+    "d100": 75,
+    "item": "Well of many worlds"
+  },
+  {
+    "d100": 76,
+    "item": "Magic armor (DM's choice - see p149)"
+  },
+  {
+    "d100": 77,
+    "item": "Apparatus of Kwalish"
+  },
+  {
+    "d100": 78,
+    "item": "Armor of invulnerability"
+  },
+  {
+    "d100": 79,
+    "item": "Belt of storm giant strength"
+  },
+  {
+    "d100": 80,
+    "item": "Cubic gate"
+  },
+  {
+    "d100": 81,
+    "item": "Deck of many things"
+  },
+  {
+    "d100": 82,
+    "item": "Efreeti chain"
+  },
+  {
+    "d100": 83,
+    "item": "Armor of resistance (half plate)"
+  },
+  {
+    "d100": 84,
+    "item": "Horn of Valhalla (iron)"
+  },
+  {
+    "d100": 85,
+    "item": "Instrument of the bards (Ollamh harp)"
+  },
+  {
+    "d100": 86,
+    "item": "Ioun stone (greater absorption)"
+  },
+  {
+    "d100": 87,
+    "item": "Ioun stone (mastery)"
+  },
+  {
+    "d100": 88,
+    "item": "Ioun stone (regeneration)"
+  },
+  {
+    "d100": 89,
+    "item": "Plate armor of etherealness"
+  },
+  {
+    "d100": 90,
+    "item": "Plate armor of resistance"
+  },
+  {
+    "d100": 91,
+    "item": "Ring of air elemental command"
+  },
+  {
+    "d100": 92,
+    "item": "Ring of earth elemental command"
+  },
+  {
+    "d100": 93,
+    "item": "Ring of fire elemental command"
+  },
+  {
+    "d100": 94,
+    "item": "Ring of three wishes"
+  },
+  {
+    "d100": 95,
+    "item": "Ring of water elemental command"
+  },
+  {
+    "d100": 96,
+    "item": "Sphere of annihilation"
+  },
+  {
+    "d100": 97,
+    "item": "Talisman of pure good"
+  },
+  {
+    "d100": 98,
+    "item": "Talisman of the sphere"
+  },
+  {
+    "d100": 99,
+    "item": "Talisman of ultimate evil"
+  },
+  {
+    "d100": 100,
+    "item": "Tome of the stilled tongue"
+  }
+]

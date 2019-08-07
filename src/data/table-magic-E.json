@@ -1,0 +1,30 @@
+[
+  {
+    "d100": 30,
+    "item": "Spell scroll (8th level)"
+  },
+  {
+    "d100": 55,
+    "item": "Potion of storm giant strength"
+  },
+  {
+    "d100": 70,
+    "item": "Potion of supreme healing"
+  },
+  {
+    "d100": 85,
+    "item": "Spell scroll (9th level)"
+  },
+  {
+    "d100": 93,
+    "item": "Universal solvent"
+  },
+  {
+    "d100": 98,
+    "item": "Arrow of slaying"
+  },
+  {
+    "d100": 100,
+    "item": "Sovereign glue"
+  }
+]
