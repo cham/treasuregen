@@ -2,6 +2,10 @@ const getTreasureTable = (type, cr) => require(`../data/table-${type}-${cr}.json
 const getGemTable = type => require(`../data/table-gems-${type}.json`)
 const getArtTable = type => require(`../data/table-art-${type}.json`)
 const getMagicTable = type => require(`../data/table-magic-${type}.json`)
+const getCreatorTable = () => require('../data/table-specialfeatures-creator.json')
+const getHistoryTable = () => require('../data/table-specialfeatures-history.json')
+const getMinorPropertyTable = () => require('../data/table-specialfeatures-minorproperty.json')
+const getQuirkTable = () => require('../data/table-specialfeatures-quirk.json')
 
 const rollDice = (numFaces, numRolls) => {
   let total = 0
@@ -112,6 +116,18 @@ const getRandomEntriesOfType = (entries, typeKey, fancyFn) => {
     }, [])
 }
 
+const generateDetail = () => {
+  const creatorTable = getCreatorTable()
+  const creator = creatorTable[rollDie(creatorTable.length) - 1]
+  const historyTable = getHistoryTable()
+  const history = historyTable[rollDie(historyTable.length) - 1]
+  const minorPropertyTable = getMinorPropertyTable()
+  const minorProperty = minorPropertyTable[rollDie(minorPropertyTable.length) - 1]
+  const quirkTable = getQuirkTable()
+  const quirk = quirkTable[rollDie(quirkTable.length) - 1]
+  return { creator, history, minorProperty, quirk }
+}
+
 const getGems = (roll, gemEntries) => {
   const gemEntry = getEntry(roll, gemEntries)
   return getRandomEntriesOfType(gemEntry, 'gemType', gemTypeToFancy)
@@ -141,7 +157,8 @@ const getMagic = (roll, magicEntries) => {
     }, {})
   return Object.keys(magicItemQtys).map(magicType => ({
     amount: magicItemQtys[magicType],
-    magicType
+    magicType,
+    detail: generateDetail()
   }))
 }
 
