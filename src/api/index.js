@@ -81,30 +81,45 @@ const getCoins = (roll, coinEntries) => {
     })
 }
 
+const getRandomEntriesOfType = (entries, typeKey, fancyFn) => {
+  return Object.keys(entries)
+    .reduce((memo, valueType) => {
+      let amount = rollDiceForDefinition(entries[valueType])
+      while (amount--) {
+        let datum = {
+          amountInGP: gpConversionRatio(valueType)
+        }
+        datum[typeKey] = `${fancyFn(valueType)}, ${valueType} each`
+        memo.push(datum)
+      }
+      return memo
+    }, [])
+    .reduce((memo, datum) => {
+      let found = false
+      memo.forEach((itemInMemo) => {
+        if (itemInMemo[typeKey] === datum[typeKey]) {
+          itemInMemo.amount++
+          found = true
+        }
+      })
+      if (!found) {
+        memo.push({
+          ...datum,
+          amount: 1
+        })
+      }
+      return memo
+    }, [])
+}
+
 const getGems = (roll, gemEntries) => {
   const gemEntry = getEntry(roll, gemEntries)
-  return Object.keys(gemEntry)
-    .map((gemType) => {
-      const amount = rollDiceForDefinition(gemEntry[gemType])
-      return {
-        gemType: `${gemTypeToFancy(gemType)}, ${gemType} each`,
-        amount,
-        amountInGP: amount * gpConversionRatio(gemType)
-      }
-    })
+  return getRandomEntriesOfType(gemEntry, 'gemType', gemTypeToFancy)
 }
 
 const getArt = (roll, artEntries) => {
   const artEntry = getEntry(roll, artEntries)
-  return Object.keys(artEntry)
-    .map((artType) => {
-      const amount = rollDiceForDefinition(artEntry[artType])
-      return {
-        artType: `${artTypeToFancy(artType)}, ${artType} each`,
-        amount,
-        amountInGP: amount * gpConversionRatio(artType)
-      }
-    })
+  return getRandomEntriesOfType(artEntry, 'artType', artTypeToFancy)
 }
 
 const getMagic = (roll, magicEntries) => {
