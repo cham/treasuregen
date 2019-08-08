@@ -130,6 +130,10 @@ const getRandomEntriesOfType = (entries, typeKey, fancyFn) => {
       }
       return memo
     }, [])
+    .map(datum => ({
+      ...datum,
+      amountInGP: datum.amountInGP * datum.amount
+    }))
 }
 
 const generateDetail = () => {
