@@ -6,7 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "electron": "vue-cli-service build && electron main"
+    "electron": "vue-cli-service build && electron .",
+    "build-package:linux": "npm run build && electron-packager . TreasureGen --overwrite --platform=linux --arch=x64 --prune=true --out=release-builds --asar",
+    "build-package:osx": "npm run build && electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds --asar",
+    "build-package:windows": "npm run build && electron-packager . TreasureGen --overwrite --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"TreasureGen\" --asar"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -19,6 +22,7 @@
     "@vue/cli-service": "^3.10.0",
     "babel-eslint": "^10.0.1",
     "electron": "^6.0.0",
+    "electron-packager": "^14.0.4",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
