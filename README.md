@@ -2,6 +2,8 @@
 
 ## Project setup
 ```
+nvm install
+nvm use
 npm install
 ```
 
@@ -15,15 +17,19 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
+### Compiles and runs in an electron app
 ```
-npm run test
+npm run electron
+```
+
+### Compiles and builds as a native app for osx, windows or linux
+```
+npm run build-package:osx
+npm run build-package:windows
+npm run build-package:linux
 ```
 
 ### Lints and fixes files
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
