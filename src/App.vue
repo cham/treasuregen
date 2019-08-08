@@ -37,7 +37,7 @@ html, body {
   color: #fff;
   background: #000;
   height: 100%;
-  font-size: 1.4vh;
+  font-size: 2.4vh;
 }
 .background-image,
 .foreground-panel {
@@ -54,9 +54,12 @@ html, body {
 }
 .foreground-panel {
   overflow-y: auto;
+  padding-top: 7vh;
 }
 .top-bar {
-  background: #860;
-  padding: 0.5vw 0.5vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 </style>

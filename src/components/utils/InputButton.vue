@@ -27,12 +27,12 @@ p {
   margin-right: 1vw;
 }
 button {
-  font-size: 1.4vh;
+  font-size: 2.4vh;
   border: 0;
   background: rgba(255,255,255,0.4);
-  padding: 0.3vh 0.3vw;
-  margin-left: 0.3vw;
-  height: 3vh;
+  padding: 0.6vh 0.6vw;
+  margin-left: 0.6vw;
+  height: 4.1vh;
   cursor: pointer;
 }
 button:focus {

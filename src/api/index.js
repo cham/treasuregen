@@ -140,13 +140,11 @@ const generateDetail = () => {
   const minorPropertyTable = getMinorPropertyTable()
   let minorProperties = [ minorPropertyTable[rollDie(minorPropertyTable.length) - 1] ]
   if (minorProperties[0] === '{{rerollx2}}') {
-    console.log('got reroll')
     const minorPropertyUniqueRolls = rollDiceUnique(minorPropertyTable.length - 1, 2)
     minorProperties = [
       minorPropertyTable[minorPropertyUniqueRolls[0] - 1],
       minorPropertyTable[minorPropertyUniqueRolls[1] - 1]
     ]
-    console.log(minorProperties)
   }
   const quirkTable = getQuirkTable()
   const quirks = [ quirkTable[rollDie(quirkTable.length) - 1] ]

@@ -44,12 +44,13 @@ export default {
 
 <style scoped>
 form {
-  padding: 0;
+  background: #860;
+  padding: 1vw 1vh;
   margin: 0;
 }
 .roll-result {
   float: right;
-  height: 3vh;
+  height: 4.1vh;
   display: flex;
   align-items: center;
 }
