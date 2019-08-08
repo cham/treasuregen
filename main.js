@@ -1,11 +1,11 @@
-const {app, BrowserWindow, protocol} = require('electron')
+const {app, BrowserWindow, protocol, Menu} = require('electron')
 const path = require('path')
 
 let mainWindow
 
-function createWindow () {
-  const WEB_FOLDER = 'dist';
-  const PROTOCOL = 'file';
+const createWindow = () => {
+  const WEB_FOLDER = 'dist'
+  const PROTOCOL = 'file'
 
   protocol.interceptFileProtocol(PROTOCOL, (request, callback) => {
       let url = request.url.substr(PROTOCOL.length + 1)
@@ -16,24 +16,31 @@ function createWindow () {
       callback({path: url})
   })
 
+  Menu.setApplicationMenu(null)
+
   mainWindow = new BrowserWindow({
     width: 800,
-    height: 600
+    height: 600,
+    menu: false
   })
 
   mainWindow.loadFile('index.html')
 
-  mainWindow.on('closed', function () {
+  mainWindow.on('closed', () => {
     mainWindow = null
   })
 }
 
 app.on('ready', createWindow)
 
-app.on('window-all-closed', function () {
+app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
 
-app.on('activate', function () {
+app.on('activate', () => {
   if (mainWindow === null) createWindow()
+})
+
+app.on('browser-window-created', (e, win) => {
+  win.setMenu(null)
 })
