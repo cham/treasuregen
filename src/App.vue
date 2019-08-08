@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <treasure-selector/>
-    <treasure-results/>
+    <div class="background-image"/>
+    <div class="foreground-panel">
+      <treasure-selector class="top-bar"/>
+      <treasure-results/>
+    </div>
   </div>
 </template>
 
@@ -18,12 +21,42 @@ export default {
 </script>
 
 <style>
+html, body {
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #fff;
+  background: #000;
+  height: 100%;
+  font-size: 1.4vh;
+}
+.background-image,
+.foreground-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.background-image {
+  background: url(./assets/background.jpg);
+  background-size: cover;
+  opacity: 0.4;
+}
+.foreground-panel {
+  overflow-y: auto;
+}
+.top-bar {
+  background: #860;
+  padding: 0.5vw 0.5vh;
 }
 </style>

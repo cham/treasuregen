@@ -1,26 +1,25 @@
 <template>
   <div>
-    <div>
-      Roll: {{roll}}
-    </div>
-    <div v-if="coins.length">
-      Coins - {{coinTotal}} gp
-      <coins-list/>
-    </div>
-    <div v-if="gems.length">
-      Gems - {{gemsTotal}} gp
-      <gems-list/>
-    </div>
-    <div v-if="art.length">
-      Art - {{artTotal}} gp
-      <art-list/>
-    </div>
-    <div v-if="magic.length">
-      Magic
-      <magic-list/>
-    </div>
-    <div>
-      Total gold value - {{totalGoldValue}} gp
+    <div v-if="roll">
+      <div v-if="coins.length">
+        Coins - {{coinTotal}} gp
+        <coins-list/>
+      </div>
+      <div v-if="gems.length">
+        Gems - {{gemsTotal}} gp
+        <gems-list/>
+      </div>
+      <div v-if="art.length">
+        Art - {{artTotal}} gp
+        <art-list/>
+      </div>
+      <div v-if="magic.length">
+        Magic
+        <magic-list/>
+      </div>
+      <div>
+        Total gold value - {{totalGoldValue}} gp
+      </div>
     </div>
   </div>
 </template>
