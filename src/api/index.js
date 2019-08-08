@@ -21,6 +21,22 @@ const rollDiceForDefinition = (rollDef) => {
   return rollDice(parseInt(defParts[1]), parseInt(defParts[0]))
 }
 
+const rollDiceUnique = (numFaces, numRolls) => {
+  if (numRolls > numFaces) {
+    throw new Error(`Cannot retrieve ${numRolls} unique rolls from a ${numFaces} sided die`)
+  }
+  const rolls = []
+  let roll
+  let shortCircuit = 100000
+  while (rolls.length < numRolls && shortCircuit--) {
+    roll = rollDie(numFaces)
+    if (rolls.indexOf(roll) === -1) {
+      rolls.push(roll)
+    }
+  }
+  return rolls
+}
+
 const gpConversionRatio = (itemKey) => {
   if (itemKey === 'cp') {
     return 0.01
@@ -118,14 +134,23 @@ const getRandomEntriesOfType = (entries, typeKey, fancyFn) => {
 
 const generateDetail = () => {
   const creatorTable = getCreatorTable()
-  const creator = creatorTable[rollDie(creatorTable.length) - 1]
+  const creators = [ creatorTable[rollDie(creatorTable.length) - 1] ]
   const historyTable = getHistoryTable()
-  const history = historyTable[rollDie(historyTable.length) - 1]
+  const histories = [ historyTable[rollDie(historyTable.length) - 1] ]
   const minorPropertyTable = getMinorPropertyTable()
-  const minorProperty = minorPropertyTable[rollDie(minorPropertyTable.length) - 1]
+  let minorProperties = [ minorPropertyTable[rollDie(minorPropertyTable.length) - 1] ]
+  if (minorProperties[0] === '{{rerollx2}}') {
+    console.log('got reroll')
+    const minorPropertyUniqueRolls = rollDiceUnique(minorPropertyTable.length - 1, 2)
+    minorProperties = [
+      minorPropertyTable[minorPropertyUniqueRolls[0] - 1],
+      minorPropertyTable[minorPropertyUniqueRolls[1] - 1]
+    ]
+    console.log(minorProperties)
+  }
   const quirkTable = getQuirkTable()
-  const quirk = quirkTable[rollDie(quirkTable.length) - 1]
-  return { creator, history, minorProperty, quirk }
+  const quirks = [ quirkTable[rollDie(quirkTable.length) - 1] ]
+  return { creators, histories, minorProperties, quirks }
 }
 
 const getGems = (roll, gemEntries) => {
