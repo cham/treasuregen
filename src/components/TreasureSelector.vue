@@ -2,6 +2,8 @@
   <form>
     <input-select inputid="type" label="Type" :options="['Individual', 'Hoard']" @change="onUpdateType"/>
     <input-select inputid="cr" label="CR" :options="['0-4', '5-10', '11-16', '17+']" @change="onUpdateCR"/>
+    <input-checkbox inputid="includecrate" label="Include Crate Loot" :checked="false" @change="onUpdateIncludeCrateLoot"/>
+    <input-range inputid="numcrateitems" :min="1" :max="50" :value="numCrateItems" @change="onUpdateNumCrateItems"/>
     <input-button @click="onGenerate">Generate</input-button>
     <div v-if="roll" class="roll-result">
       Roll
@@ -14,16 +16,22 @@
 import { mapActions, mapGetters } from 'vuex'
 import InputSelect from '@/components/utils/InputSelect'
 import InputButton from '@/components/utils/InputButton'
+import InputCheckbox from '@/components/utils/InputCheckbox'
+import InputRange from '@/components/utils/InputRange'
 
 export default {
   components: {
     InputSelect,
-    InputButton
+    InputButton,
+    InputCheckbox,
+    InputRange
   },
   data () {
     return {
       type: '',
-      cr: ''
+      cr: '',
+      includeCrateLoot: false,
+      numCrateItems: 10
     }
   },
   computed: mapGetters('treasure', ['roll']),
@@ -34,6 +42,12 @@ export default {
     },
     onUpdateCR (cr) {
       this.cr = cr
+    },
+    onUpdateIncludeCrateLoot (includeCrateLoot) {
+      this.includeCrateLoot = includeCrateLoot
+    },
+    onUpdateNumCrateItems (numCrateItems) {
+      this.numCrateItems = parseInt(numCrateItems)
     },
     onGenerate () {
       this.getTreasure(this)

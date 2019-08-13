@@ -32,6 +32,10 @@
         Magic items
         <magic-list class="treasure-results--list"/>
       </div>
+      <div v-if="crateItems.length" class="treasure-results--listwrapper treasure-results--crate">
+        Crate items
+        <crate-list class="treasure-results--list"/>
+      </div>
     </div>
   </div>
 </template>
@@ -42,6 +46,7 @@ import CoinsList from '@/components/CoinsList'
 import GemsList from '@/components/GemsList'
 import ArtList from '@/components/ArtList'
 import MagicList from '@/components/MagicList'
+import CrateList from '@/components/CrateList'
 
 const sumGPValue = arr => arr.reduce((memo, datum) => {
   return memo + datum.amountInGP
@@ -52,10 +57,11 @@ export default {
     CoinsList,
     GemsList,
     ArtList,
-    MagicList
+    MagicList,
+    CrateList
   },
   computed: {
-    ...mapGetters('treasure', ['coins', 'gems', 'art', 'roll', 'magic']),
+    ...mapGetters('treasure', ['coins', 'gems', 'art', 'roll', 'magic', 'crateItems']),
     coinTotal () {
       if (!this.coins.length) {
         return '0.00'
@@ -110,7 +116,8 @@ export default {
   margin-top: 1vh;
 }
 .treasure-results--toggle:checked + .treasure-results--list,
-.treasure-results--magic .treasure-results--list {
+.treasure-results--magic .treasure-results--list,
+.treasure-results--crate .treasure-results--list {
   display: block;
 }
 </style>

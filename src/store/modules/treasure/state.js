@@ -3,7 +3,8 @@ const state = {
   gems: [],
   art: [],
   roll: 0,
-  magic: []
+  magic: [],
+  crateItems: []
 }
 
 export default state

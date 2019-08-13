@@ -13,6 +13,9 @@ const mutations = {
   },
   'SET_MAGIC' (state, magic) {
     Object.assign(state, { magic })
+  },
+  'SET_CRATE_ITEMS' (state, crateItems) {
+    Object.assign(state, { crateItems })
   }
 }
 

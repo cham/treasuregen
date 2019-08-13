@@ -6,6 +6,7 @@ const getCreatorTable = () => require('../data/table-specialfeatures-creator.jso
 const getHistoryTable = () => require('../data/table-specialfeatures-history.json')
 const getMinorPropertyTable = () => require('../data/table-specialfeatures-minorproperty.json')
 const getQuirkTable = () => require('../data/table-specialfeatures-quirk.json')
+const getCrateTable = () => require('../data/table-crate.json')
 
 const rollDice = (numFaces, numRolls) => {
   let total = 0
@@ -189,14 +190,25 @@ const getMagic = (roll, magicEntries) => {
   }))
 }
 
-const getTreasure = (type, cr) => {
+const getCrateLoot = (numItems) => {
+  const table = getCrateTable()
+  const selectedIndexes = rollDiceUnique(table.length, numItems)
+  const items = []
+  while (numItems--) {
+    items.push(table[selectedIndexes[numItems]])
+  }
+  return items
+}
+
+const getTreasure = (type, cr, numCrateItems) => {
   const table = getTreasureTable(type, cr)
   const roll = rollDie(100)
   const coins = getCoins(roll, table.coins)
   const gems = getGems(roll, table.gems)
   const art = getArt(roll, table.art)
   const magic = getMagic(roll, table.magic)
-  return { roll, coins, gems, art, magic }
+  const crateItems = getCrateLoot(numCrateItems)
+  return { roll, coins, gems, art, magic, crateItems }
 }
 
 export { getTreasure }
